@@ -1,7 +1,4 @@
-import face_dll
-import face_class
-from ctypes import *
-import cv2
+
 import face_function as fun
 import face_feature_extract
 import video_camera
