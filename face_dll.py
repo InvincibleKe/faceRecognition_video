@@ -2,7 +2,7 @@ from ctypes import c_int32, c_char_p, c_void_p, c_float, c_size_t, c_ubyte, c_lo
 from face_class import *
 import os
 wuyongdll = CDLL(os.getcwd()+ '/libarcsoft/libarcsoft_face.so')
-dll = CDLL('libarcsoft/libarcsoft_face_engine.dll')
+dll = CDLL('libarcsoft/libarcsoft_face_engine.so')
 dllc = cdll.msvcrt
 ASF_DETECT_MODE_VIDEO = 0x00000000
 ASF_DETECT_MODE_IMAGE = 0xFFFFFFFF
