@@ -1,8 +1,8 @@
 from ctypes import c_int32, c_char_p, c_void_p, c_float, c_size_t, c_ubyte, c_long, cdll, POINTER, CDLL
 from face_class import *
 import os
-wuyongdll = CDLL(os.path.join(os.path.dirname(__file__), "libarcsoft_face.so"))
-dll = CDLL(os.path.join(os.path.dirname(__file__)),'libarcsoft/libarcsoft_face_engine.so')
+wuyongdll = CDLL('libarcsoft/libarcsoft_face.so')
+dll = CDLL('libarcsoft/libarcsoft_face_engine.so')
 dllc = CDLL('libc.so.6')
 ASF_DETECT_MODE_VIDEO = 0x00000000
 ASF_DETECT_MODE_IMAGE = 0xFFFFFFFF
