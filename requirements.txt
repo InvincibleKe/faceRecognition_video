@@ -1,0 +1,2 @@
+Flask==0.12.2
+opencv_contrib_python_headless==4.5.1.48
