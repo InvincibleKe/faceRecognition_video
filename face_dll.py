@@ -3,7 +3,7 @@ from face_class import *
 import os
 wuyongdll = CDLL(os.path.join(os.path.dirname(__file__), "libarcsoft_face.so"))
 dll = CDLL(os.path.join(os.path.dirname(__file__)),'libarcsoft/libarcsoft_face_engine.so')
-dllc = cdll.msvcrt
+dllc = CDLL('libc.so.6')
 ASF_DETECT_MODE_VIDEO = 0x00000000
 ASF_DETECT_MODE_IMAGE = 0xFFFFFFFF
 c_ubyte_p = POINTER(c_ubyte)
