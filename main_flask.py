@@ -53,7 +53,7 @@ def gen():
 '''
 返回图片流
 '''
-@app.route('/video_feed/')
+@app.route('/faceRecognition_video')
 def video_feed():
     return Response(gen(),mimetype='multipart/x-mixed-replace; boundary=frame')
 
